@@ -1,0 +1,329 @@
+\hypertarget{class_b_s_tree}{\section{\-B\-S\-Tree$<$ \-Data\-Type, \-Key\-Type $>$ \-Class \-Template \-Reference}
+\label{class_b_s_tree}\index{\-B\-S\-Tree$<$ Data\-Type, Key\-Type $>$@{\-B\-S\-Tree$<$ Data\-Type, Key\-Type $>$}}
+}
+
+
+{\ttfamily \#include $<$\-B\-S\-Tree.\-h$>$}
+
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_s_tree_a4513fc6697f5e51bff8e7c448b446c9e}{\-B\-S\-Tree} ()
+\item 
+\hyperlink{class_b_s_tree_a6658391c178cb35858c9c465e1839fb0}{\-B\-S\-Tree} (const \hyperlink{class_b_s_tree}{\-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$ \&other)
+\item 
+\hyperlink{class_b_s_tree}{\-B\-S\-Tree} \& \hyperlink{class_b_s_tree_ac36b0b564aa3c411c239d730f506f448}{operator=} (const \hyperlink{class_b_s_tree}{\-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$ \&other)
+\item 
+\hyperlink{class_b_s_tree_a968c51c539f4ae41357c78b6a60fea4c}{$\sim$\-B\-S\-Tree} ()
+\item 
+void \hyperlink{class_b_s_tree_ab86b4cea496ee53076021126423d51fd}{insert} (const \-Data\-Type \&new\-Data\-Item)
+\item 
+bool \hyperlink{class_b_s_tree_a4359bfee390669b5adaf0380ef62b18d}{retrieve} (const \-Key\-Type \&search\-Key, \-Data\-Type \&search\-Data\-Item) const 
+\item 
+bool \hyperlink{class_b_s_tree_a755549f7b88d0178a96ca84afd5e04cf}{remove} (const \-Key\-Type \&delete\-Key)
+\item 
+void \hyperlink{class_b_s_tree_a7f08f48e6d1bbe3eb726856a947325e7}{write\-Keys} () const 
+\item 
+void \hyperlink{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}{clear} ()
+\item 
+bool \hyperlink{class_b_s_tree_a43768375369ca8fe641a86451997ad45}{is\-Empty} () const 
+\item 
+void \hyperlink{class_b_s_tree_ac28277cacbf8ab33326473a419abf097}{show\-Structure} () const 
+\item 
+int \hyperlink{class_b_s_tree_a3850adc6b8ae965ec11ec0e0567b6f7d}{get\-Height} () const 
+\item 
+int \hyperlink{class_b_s_tree_a880d98553153533d3c29504e8a272c7d}{get\-Count} () const 
+\item 
+void \hyperlink{class_b_s_tree_a92079e5301185f41eebe1c32c2357258}{write\-Less\-Than} (const \-Key\-Type \&search\-Key) const 
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_b_s_tree_a44b3002e3476eb410468a4b9aaaa73ef}{show\-Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node} $\ast$p, int level) const 
+\item 
+void \hyperlink{class_b_s_tree_ae64043d5d2d925dce95b7c8ceb801417}{copy\-Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node} $\ast$\&dest, \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node} $\ast$source)
+\item 
+void \hyperlink{class_b_s_tree_a1ede33f8cbe9d1d94b479b477d95d016}{clear\-Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node} $\ast$\&ptr)
+\item 
+void \hyperlink{class_b_s_tree_ab3d09c9969cce52974a4a65e00202061}{insert\-Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node} $\ast$\&ptr, const \-Data\-Type \&new\-Data\-Item)
+\item 
+bool \hyperlink{class_b_s_tree_ad558bd869107eec627a5015e8361275b}{retrieve\-Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node} $\ast$ptr, const \-Key\-Type \&search\-Key, \-Data\-Type \&search\-Data\-Item) const 
+\item 
+bool \hyperlink{class_b_s_tree_aa62fa808a54daabba878b17fe09f5378}{remove\-Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node} $\ast$\&ptr, const \-Key\-Type \&delete\-Key)
+\item 
+void \hyperlink{class_b_s_tree_a55a1dafcd5a629264fe329a47ceabf4f}{write\-Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node} $\ast$ptr) const 
+\item 
+int \hyperlink{class_b_s_tree_a1e5f83d364cd403d5c548e46d2b665bf}{count\-Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node} $\ast$ptr) const 
+\item 
+int \hyperlink{class_b_s_tree_a38df91c5e55a3b39f4590ee15f375f22}{height\-Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node} $\ast$ptr) const 
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{\-B\-S\-Tree\-Node} $\ast$ \hyperlink{class_b_s_tree_a83534afce9094181ac031f9f596a8625}{root}
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename \-Data\-Type, class \-Key\-Type$>$ class B\-S\-Tree$<$ Data\-Type, Key\-Type $>$}
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_b_s_tree_a4513fc6697f5e51bff8e7c448b446c9e}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!\-B\-S\-Tree@{\-B\-S\-Tree}}
+\index{\-B\-S\-Tree@{\-B\-S\-Tree}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{\-B\-S\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf \-B\-S\-Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_a4513fc6697f5e51bff8e7c448b446c9e}
+\-Default \-Constructor for the binary seach tree
+
+\-Default constructor which sets the root pointer of the binary seach tree to \-N\-U\-L\-L.
+
+\begin{DoxyPrecond}{\-Precondition}
+\-None 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondition}
+
+\begin{DoxyEnumerate}
+\item \-The root pointer will now be pointing to \-N\-U\-L\-L. 
+\end{DoxyEnumerate}
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_a6658391c178cb35858c9c465e1839fb0}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!\-B\-S\-Tree@{\-B\-S\-Tree}}
+\index{\-B\-S\-Tree@{\-B\-S\-Tree}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{\-B\-S\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf \-B\-S\-Tree} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_a6658391c178cb35858c9c465e1839fb0}
+\-Copy \-Constructor for the binary seach tree
+
+\-Copy constructor sets root to \-N\-U\-L\-L. \-The overloaded assignment operator is then called to create a copy of the given binary seach tree. 
+\begin{DoxyParams}{\-Parameters}
+{\em source} & \-Given binary seach tree to be copied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{\-Precondition}
+
+\begin{DoxyEnumerate}
+\item \-Function must be called with a valid binary seach tree as the parameter. 
+\end{DoxyEnumerate}
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondition}
+
+\begin{DoxyEnumerate}
+\item \-Tree will be created.
+\item \-Tree will be updated to be a deep copy of the given source binary seach tree. 
+\end{DoxyEnumerate}
+\end{DoxyPostcond}
+\hypertarget{class_b_s_tree_a968c51c539f4ae41357c78b6a60fea4c}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!$\sim$\-B\-S\-Tree@{$\sim$\-B\-S\-Tree}}
+\index{$\sim$\-B\-S\-Tree@{$\sim$\-B\-S\-Tree}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{$\sim$\-B\-S\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::$\sim${\bf \-B\-S\-Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_a968c51c539f4ae41357c78b6a60fea4c}
+\-Destructor
+
+\-Destructor calls clear function to clear tree. \begin{DoxyPrecond}{\-Precondition}
+
+\begin{DoxyEnumerate}
+\item \-Binary seach tree must be declared. 
+\end{DoxyEnumerate}
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondition}
+
+\begin{DoxyEnumerate}
+\item \-Tree will have nodes deleted.
+\item \-Root will be pointing to null. 
+\end{DoxyEnumerate}
+\end{DoxyPostcond}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!clear@{clear}}
+\index{clear@{clear}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ void {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf clear} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}
+\hypertarget{class_b_s_tree_a1ede33f8cbe9d1d94b479b477d95d016}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!clear\-Helper@{clear\-Helper}}
+\index{clear\-Helper@{clear\-Helper}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{clear\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , typename Key\-Type $>$ void {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf clear\-Helper} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-S\-Tree\-Node} $\ast$\&}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_b_s_tree_a1ede33f8cbe9d1d94b479b477d95d016}
+\hypertarget{class_b_s_tree_ae64043d5d2d925dce95b7c8ceb801417}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!copy\-Helper@{copy\-Helper}}
+\index{copy\-Helper@{copy\-Helper}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{copy\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , typename Key\-Type $>$ void {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf copy\-Helper} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-S\-Tree\-Node} $\ast$\&}]{dest, }
+\item[{{\bf \-B\-S\-Tree\-Node} $\ast$}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_b_s_tree_ae64043d5d2d925dce95b7c8ceb801417}
+\hypertarget{class_b_s_tree_a1e5f83d364cd403d5c548e46d2b665bf}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!count\-Helper@{count\-Helper}}
+\index{count\-Helper@{count\-Helper}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{count\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , typename Key\-Type $>$ int {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf count\-Helper} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-S\-Tree\-Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_b_s_tree_a1e5f83d364cd403d5c548e46d2b665bf}
+\hypertarget{class_b_s_tree_a880d98553153533d3c29504e8a272c7d}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!get\-Count@{get\-Count}}
+\index{get\-Count@{get\-Count}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{get\-Count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ int {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf get\-Count} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a880d98553153533d3c29504e8a272c7d}
+\hypertarget{class_b_s_tree_a3850adc6b8ae965ec11ec0e0567b6f7d}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ int {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf get\-Height} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a3850adc6b8ae965ec11ec0e0567b6f7d}
+\hypertarget{class_b_s_tree_a38df91c5e55a3b39f4590ee15f375f22}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!height\-Helper@{height\-Helper}}
+\index{height\-Helper@{height\-Helper}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{height\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , typename Key\-Type $>$ int {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf height\-Helper} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-S\-Tree\-Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_b_s_tree_a38df91c5e55a3b39f4590ee15f375f22}
+\hypertarget{class_b_s_tree_ab86b4cea496ee53076021126423d51fd}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!insert@{insert}}
+\index{insert@{insert}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ void {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf insert} (
+\begin{DoxyParamCaption}
+\item[{const \-Data\-Type \&}]{new\-Data\-Item}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_ab86b4cea496ee53076021126423d51fd}
+\hypertarget{class_b_s_tree_ab3d09c9969cce52974a4a65e00202061}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!insert\-Helper@{insert\-Helper}}
+\index{insert\-Helper@{insert\-Helper}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{insert\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , typename Key\-Type $>$ void {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf insert\-Helper} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-S\-Tree\-Node} $\ast$\&}]{ptr, }
+\item[{const \-Data\-Type \&}]{new\-Data\-Item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_b_s_tree_ab3d09c9969cce52974a4a65e00202061}
+\hypertarget{class_b_s_tree_a43768375369ca8fe641a86451997ad45}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ bool {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf is\-Empty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a43768375369ca8fe641a86451997ad45}
+\hypertarget{class_b_s_tree_ac36b0b564aa3c411c239d730f506f448}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!operator=@{operator=}}
+\index{operator=@{operator=}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$ \& {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_ac36b0b564aa3c411c239d730f506f448}
+\-Overloaded \-Assignment \-Operator
+
+\-Function overloads assignment operator so that one binary seach tree may be assigned to another explicitly. \-First clears the current tree if necessary and then copies over given tree. 
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em source} & \-Given binary seach tree to be copied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{\-Precondition}
+
+\begin{DoxyEnumerate}
+\item \-Binary seach tree must be declared.
+\item \-Source must be valid binary seach tree. 
+\end{DoxyEnumerate}
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondition}
+
+\begin{DoxyEnumerate}
+\item \-Tree will become a deep copy of given source tree. 
+\end{DoxyEnumerate}
+\end{DoxyPostcond}
+\begin{DoxyReturn}{\-Returns}
+\-Updated tree object. 
+\end{DoxyReturn}
+\hypertarget{class_b_s_tree_a755549f7b88d0178a96ca84afd5e04cf}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!remove@{remove}}
+\index{remove@{remove}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ bool {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf remove} (
+\begin{DoxyParamCaption}
+\item[{const \-Key\-Type \&}]{delete\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_b_s_tree_a755549f7b88d0178a96ca84afd5e04cf}
+\hypertarget{class_b_s_tree_aa62fa808a54daabba878b17fe09f5378}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!remove\-Helper@{remove\-Helper}}
+\index{remove\-Helper@{remove\-Helper}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{remove\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , typename Key\-Type $>$ bool {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf remove\-Helper} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-S\-Tree\-Node} $\ast$\&}]{ptr, }
+\item[{const \-Key\-Type \&}]{delete\-Key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_b_s_tree_aa62fa808a54daabba878b17fe09f5378}
+\hypertarget{class_b_s_tree_a4359bfee390669b5adaf0380ef62b18d}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{retrieve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ bool {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf retrieve} (
+\begin{DoxyParamCaption}
+\item[{const \-Key\-Type \&}]{search\-Key, }
+\item[{\-Data\-Type \&}]{search\-Data\-Item}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a4359bfee390669b5adaf0380ef62b18d}
+\hypertarget{class_b_s_tree_ad558bd869107eec627a5015e8361275b}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!retrieve\-Helper@{retrieve\-Helper}}
+\index{retrieve\-Helper@{retrieve\-Helper}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{retrieve\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , typename Key\-Type $>$ bool {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf retrieve\-Helper} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-S\-Tree\-Node} $\ast$}]{ptr, }
+\item[{const \-Key\-Type \&}]{search\-Key, }
+\item[{\-Data\-Type \&}]{search\-Data\-Item}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_b_s_tree_ad558bd869107eec627a5015e8361275b}
+\hypertarget{class_b_s_tree_a44b3002e3476eb410468a4b9aaaa73ef}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!show\-Helper@{show\-Helper}}
+\index{show\-Helper@{show\-Helper}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{show\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , typename Key\-Type $>$ void {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf show\-Helper} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-S\-Tree\-Node} $\ast$}]{p, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_b_s_tree_a44b3002e3476eb410468a4b9aaaa73ef}
+\hypertarget{class_b_s_tree_ac28277cacbf8ab33326473a419abf097}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!show\-Structure@{show\-Structure}}
+\index{show\-Structure@{show\-Structure}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{show\-Structure}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , typename Key\-Type $>$ void {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf show\-Structure} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_ac28277cacbf8ab33326473a419abf097}
+\hypertarget{class_b_s_tree_a55a1dafcd5a629264fe329a47ceabf4f}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!write\-Helper@{write\-Helper}}
+\index{write\-Helper@{write\-Helper}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{write\-Helper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , typename Key\-Type $>$ void {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf write\-Helper} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-S\-Tree\-Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_b_s_tree_a55a1dafcd5a629264fe329a47ceabf4f}
+\hypertarget{class_b_s_tree_a7f08f48e6d1bbe3eb726856a947325e7}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!write\-Keys@{write\-Keys}}
+\index{write\-Keys@{write\-Keys}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{write\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ void {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf write\-Keys} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a7f08f48e6d1bbe3eb726856a947325e7}
+\hypertarget{class_b_s_tree_a92079e5301185f41eebe1c32c2357258}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!write\-Less\-Than@{write\-Less\-Than}}
+\index{write\-Less\-Than@{write\-Less\-Than}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{write\-Less\-Than}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\-Type , class Key\-Type $>$ void {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf write\-Less\-Than} (
+\begin{DoxyParamCaption}
+\item[{const \-Key\-Type \&}]{search\-Key}
+\end{DoxyParamCaption}
+) const}}\label{class_b_s_tree_a92079e5301185f41eebe1c32c2357258}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_b_s_tree_a83534afce9094181ac031f9f596a8625}{\index{\-B\-S\-Tree@{\-B\-S\-Tree}!root@{root}}
+\index{root@{root}!BSTree@{\-B\-S\-Tree}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Data\-Type, class \-Key\-Type$>$ {\bf \-B\-S\-Tree\-Node}$\ast$ {\bf \-B\-S\-Tree}$<$ \-Data\-Type, \-Key\-Type $>$\-::{\bf root}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_b_s_tree_a83534afce9094181ac031f9f596a8625}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_b_s_tree_8h}{\-B\-S\-Tree.\-h}\item 
+\hyperlink{_b_s_tree_8cpp}{\-B\-S\-Tree.\-cpp}\item 
+\hyperlink{show9_8cpp}{show9.\-cpp}\end{DoxyCompactItemize}
